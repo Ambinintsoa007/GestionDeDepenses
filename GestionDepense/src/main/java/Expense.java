@@ -1,5 +1,4 @@
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 //Partie 1 — Classe de base Expense
 public class Expense {
@@ -25,9 +24,7 @@ public class Expense {
         return date;
     }
 
-    public static boolean isLargeExpense(double amount) {
-
+    public boolean isLargeExpense() {
+        return true;
     }
-
-
 }

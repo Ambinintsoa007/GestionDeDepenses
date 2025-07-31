@@ -11,6 +11,6 @@ public class RefundableExpense {
     }
 
     public static boolean refund(){
-
+        return true;
     }
 }
