@@ -1,1 +1,3 @@
-# GestionDeDepenses
+Vous allez cloner cette repository, que chacun remplit sa part de travail...
+
+Quand vous aurez terminer de coder, **CREEZ** votre propre branche et vous allez pusher **DANS VOTRE PROPRE BRANCHE**, envoyez un pull request après ;)
