@@ -13,4 +13,10 @@ public class RefundableExpense {
     public static boolean refund(){
         return true;
     }
+
+    @Override
+    public String toString() {
+        return "Refundable Expense: Label = " + getLabel() + ", Amount = $" + String.format("%.2f", getAmount())
+                + ", Date = " + getDate() + ", Refunded = " + refunded;
+    }
 }

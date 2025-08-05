@@ -12,6 +12,15 @@ public class Expense {
         this.date = date;
     }
 
+   public boolean isLargeExpense (){
+            return amount > 100.0;
+    }
+
+
+    public String toString () {
+        return "Expense: " + label + ", Amount: $" + amount + ", Date: " + date;
+    }
+
     public String getLabel() {
         return label;
     }
