@@ -27,3 +27,4 @@ public class ExpenseTest {
         Expense e = new Expense("Café", 2.5, LocalDate.now());
         assertFalse(e.isLargeExpense());
     }
+}
