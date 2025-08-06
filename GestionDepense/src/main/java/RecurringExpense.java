@@ -1,4 +1,4 @@
-public class RecurringExpense extends Reccurence.java{
+public class RecurringExpense extends Expense.java{
     private Reccurence recurence;
 
     public RecurringExpense(Reccurence recurence) {
