@@ -1,12 +1,9 @@
-//Partie 2 — Héritage
-public class RecurringExpense {
+public class RecurringExpense extends Reccurence.java{
     private Reccurence recurence;
 
     public RecurringExpense(Reccurence recurence) {
         this.recurence = recurence;
-        if (recurence != "monthly" && recurence != "yearly"){
-            return "Recurence is invalid";
-        }
+        if (recurence != "monthly" && recurence != "yearly")
     }
 
     public Reccurence getRecurence() {
@@ -15,7 +12,6 @@ public class RecurringExpense {
 
     @Override
     public String toString() {
-        return "Refundable Expense: Label = " + getLabel() + ", Amount = $" + String.format("%.2f", getAmount())
-                + ", Date = " + getDate() + ", Refunded = " + refunded;
+        return "Refunded = " + refunded;
     }
 }
