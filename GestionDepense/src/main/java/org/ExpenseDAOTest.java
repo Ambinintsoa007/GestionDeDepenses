@@ -14,8 +14,8 @@ class ExpenseDAOTest {
 
     @BeforeEach
     void setUp() {
-        refundExp = new RefundableExpense("Frais pro", 80.0, LocalDate.now());
-        recurringExp = new RecurringExpense("Netflix", 15.0, LocalDate.now(), "monthly");
+        refundExp = new RefundableExpense("Frais pro", 90.0, LocalDate.now());
+        recurringExp = new RecurringExpense("Netflix", 20.0, LocalDate.now(), "monthly");
         largeExp = new Expense("Ordinateur", 1200.0, LocalDate.now());
 
         dao = new ExpenseDAO(Arrays.asList(refundExp, recurringExp, largeExp));
@@ -31,7 +31,7 @@ class ExpenseDAOTest {
     @Test
     void testGetTotalRecurringExpenses() {
         double total = dao.getTotalRecurringExpenses();
-        assertEquals(15.0, total);
+        assertEquals(20.0, total);
     }
 
     @Test
@@ -44,7 +44,6 @@ class ExpenseDAOTest {
     @Test
     void testGetTotalExpensesAmount() {
         double total = dao.getTotalExpensesAmount();
-        assertEquals(80.0 + 15.0 + 1200.0, total);
+        assertEquals(90.0 + 20.0 + 1200.0, total);
     }
 }
-
